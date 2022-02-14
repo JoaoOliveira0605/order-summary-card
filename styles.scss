@@ -1,0 +1,231 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1,
+a,
+p,
+span {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+// Variables
+$card-blue: #382ae1;
+$dark-blue: #142d68;
+$font-color: #7e869e;
+
+// Body
+Body {
+  background: #d6e1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  height: 100%;
+
+  .card-container {
+    display: flex;
+    margin-top: 3rem;
+
+    .card {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      height: 34rem;
+      width: 20rem;
+      border-radius: 23px;
+
+      // --- Card Background image ---
+      .card-background {
+        .card-background-image {
+          border-top-left-radius: 23px;
+          border-top-right-radius: 23px;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    // --- Card Info ---
+    .card-info {
+      h1 {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: $dark-blue;
+      }
+      p {
+        margin-top: 1.3rem;
+        font-size: 1rem;
+        line-height: 1.55rem;
+        color: $font-color;
+        font-weight: 500;
+      }
+    }
+    .card-plan {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      margin-left: 2.4rem;
+      text-align: center;
+
+      .music-icon {
+        margin-right: 1rem;
+      }
+      .plan {
+        p {
+          color: $dark-blue;
+          font-weight: 800;
+        }
+        span {
+          color: $font-color;
+        }
+        margin-right: 2.1rem;
+      }
+
+      a {
+        color: $card-blue;
+        font-weight: 700;
+        font-size: 0.94rem;
+      }
+    }
+
+    // --- Payments
+
+    .card-payment {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 2rem;
+
+      .payment {
+        button {
+          background-color: $card-blue;
+          border: none;
+          width: 16rem;
+
+          height: 3.2rem;
+          border-radius: 9px;
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.253);
+          transition: 0.3s ease-out;
+
+          a {
+            border-radius: 9px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            font-weight: 700;
+          }
+        }
+        button:hover {
+          background-color: #5f51f1;
+          transition: 0.3s ease-in;
+        }
+      }
+      .cancel {
+        margin-top: 1.5rem;
+        a {
+          color: $font-color;
+          font-weight: 700;
+          transition: 0.2s ease-out;
+        }
+
+        a:hover {
+          color: rgba(0, 0, 0, 0.726);
+          transition: 0.3s ease-in;
+        }
+      }
+    }
+  }
+  //--- Social
+  .social-links {
+    display: flex;
+    margin-top: 0.9rem;
+    position: absolute;
+    top: 0;
+
+    .linkedin {
+      margin-right: 1rem;
+    }
+  }
+  //--- Icons8
+  #icons {
+    color: $font-color;
+    font-size: 0.8rem;
+    margin-top: 3.4rem;
+    opacity: 50%;
+  }
+}
+
+// media
+
+/* Iphone x */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  Body {
+    .card-container {
+      margin-top: 6rem;
+    }
+
+    #icons {
+      color: $font-color;
+      font-size: 0.8rem;
+      margin-top: 8rem;
+      opacity: 50%;
+    }
+  }
+}
+
+/* Iphone xr */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  Body {
+    .card-container {
+      margin-top: 8rem;
+    }
+
+    #icons {
+      color: $font-color;
+      font-size: 0.8rem;
+      margin-top: 8rem;
+      opacity: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  Body {
+    background: #d6e1ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 100%;
+
+    .card-container {
+      display: flex;
+      margin-top: 9vw;
+    }
+    .social-links {
+      display: flex;
+      position: absolute;
+      top: 0;
+
+      .linkedin {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

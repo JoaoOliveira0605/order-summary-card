@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1,
+a,
+p,
+span {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+Body {
+  background: #d6e1ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+
+Body .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+}
+
+Body .card-container .card {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  height: 34rem;
+  width: 20rem;
+  border-radius: 23px;
+}
+
+Body .card-container .card .card-background .card-background-image {
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  height: 100%;
+  width: 100%;
+}
+
+Body .card-container .card-info h1 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #142d68;
+}
+
+Body .card-container .card-info p {
+  margin-top: 1.3rem;
+  font-size: 1rem;
+  line-height: 1.55rem;
+  color: #7e869e;
+  font-weight: 500;
+}
+
+Body .card-container .card-plan {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2.4rem;
+  text-align: center;
+}
+
+Body .card-container .card-plan .music-icon {
+  margin-right: 1rem;
+}
+
+Body .card-container .card-plan .plan {
+  margin-right: 2.1rem;
+}
+
+Body .card-container .card-plan .plan p {
+  color: #142d68;
+  font-weight: 800;
+}
+
+Body .card-container .card-plan .plan span {
+  color: #7e869e;
+}
+
+Body .card-container .card-plan a {
+  color: #382ae1;
+  font-weight: 700;
+  font-size: 0.94rem;
+}
+
+Body .card-container .card-payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+Body .card-container .card-payment .payment button {
+  background-color: #382ae1;
+  border: none;
+  width: 16rem;
+  height: 3.2rem;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.253);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.253);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+Body .card-container .card-payment .payment button a {
+  border-radius: 9px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+}
+
+Body .card-container .card-payment .payment button:hover {
+  background-color: #5f51f1;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+Body .card-container .card-payment .cancel {
+  margin-top: 1.5rem;
+}
+
+Body .card-container .card-payment .cancel a {
+  color: #7e869e;
+  font-weight: 700;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+Body .card-container .card-payment .cancel a:hover {
+  color: rgba(0, 0, 0, 0.726);
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+Body .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.9rem;
+  position: absolute;
+  top: 0;
+}
+
+Body .social-links .linkedin {
+  margin-right: 1rem;
+}
+
+Body #icons {
+  color: #7e869e;
+  font-size: 0.8rem;
+  margin-top: 3.4rem;
+  opacity: 50%;
+}
+
+/* Iphone x */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  Body .card-container {
+    margin-top: 6rem;
+  }
+  Body #icons {
+    color: #7e869e;
+    font-size: 0.8rem;
+    margin-top: 8rem;
+    opacity: 50%;
+  }
+}
+
+/* Iphone xr */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  Body .card-container {
+    margin-top: 8rem;
+  }
+  Body #icons {
+    color: #7e869e;
+    font-size: 0.8rem;
+    margin-top: 8rem;
+    opacity: 50%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  Body {
+    background: #d6e1ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 100%;
+  }
+  Body .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 9vw;
+  }
+  Body .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+  }
+  Body .social-links .linkedin {
+    margin-right: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
