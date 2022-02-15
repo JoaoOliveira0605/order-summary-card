@@ -31,6 +31,7 @@ Body {
   position: relative;
   height: 100%;
 
+  // ___CARDS
   .card-container {
     display: flex;
     margin-top: 3rem;
@@ -44,7 +45,6 @@ Body {
       width: 20rem;
       border-radius: 23px;
 
-      // --- Card Background image ---
       .card-background {
         .card-background-image {
           border-top-left-radius: 23px;
@@ -54,7 +54,7 @@ Body {
         }
       }
     }
-    // --- Card Info ---
+
     .card-info {
       h1 {
         margin-top: 1.5rem;
@@ -96,10 +96,18 @@ Body {
         font-weight: 700;
         font-size: 0.94rem;
       }
+      #change-button {
+        transition: 0.2s ease-out;
+        cursor: pointer;
+      }
+
+      #change-button:hover {
+        transition: 0.2s ease-in;
+        color: black;
+      }
     }
 
     // --- Payments
-
     .card-payment {
       display: flex;
       justify-content: center;
@@ -113,6 +121,7 @@ Body {
           border: none;
           width: 16rem;
 
+          cursor: pointer;
           height: 3.2rem;
           border-radius: 9px;
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.253);
@@ -130,11 +139,15 @@ Body {
           }
         }
         button:hover {
-          background-color: #5f51f1;
+          background-color: #0084fffb;
           transition: 0.3s ease-in;
+        }
+        .active {
+          background-color: #0084fffb;
         }
       }
       .cancel {
+        cursor: pointer;
         margin-top: 1.5rem;
         a {
           color: $font-color;
@@ -144,7 +157,7 @@ Body {
 
         a:hover {
           color: rgba(0, 0, 0, 0.726);
-          transition: 0.3s ease-in;
+          transition: 0.2s ease-in;
         }
       }
     }
@@ -160,6 +173,7 @@ Body {
       margin-right: 1rem;
     }
   }
+
   //--- Icons8
   #icons {
     color: $font-color;
@@ -169,7 +183,7 @@ Body {
   }
 }
 
-// media
+// Media Query
 
 /* Iphone x */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
@@ -202,7 +216,7 @@ Body {
     }
   }
 }
-
+// ___Large Screen___
 @media only screen and (min-width: 1000px) {
   Body {
     background: #d6e1ff;
