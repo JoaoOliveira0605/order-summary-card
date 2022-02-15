@@ -236,6 +236,10 @@ Body #icons {
 
 /* Iphone xr */
 @media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  Body {
+    background: url(./assets/pattern-background-mobile.svg) no-repeat center center fixed;
+    background-size: cover;
+  }
   Body .card-container {
     margin-top: 8rem;
   }
@@ -249,7 +253,8 @@ Body #icons {
 
 @media only screen and (min-width: 1000px) {
   Body {
-    background: #d6e1ff;
+    background: url(./assets/pattern-background-desktop.svg) no-repeat center center fixed;
+    background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
