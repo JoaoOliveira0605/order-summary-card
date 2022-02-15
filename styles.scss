@@ -22,7 +22,10 @@ $font-color: #7e869e;
 
 // Body
 Body {
-  background: #d6e1ff;
+  background: url(./assets/pattern-background-mobile.svg) no-repeat center
+    center fixed;
+  background-size: cover;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,6 +191,10 @@ Body {
 /* Iphone x */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   Body {
+    background: url(./assets/pattern-background-mobile.svg) no-repeat center
+      center fixed;
+    background-size: cover;
+
     .card-container {
       margin-top: 6rem;
     }
